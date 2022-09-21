@@ -1,0 +1,42 @@
+.ghraph {
+    padding-top: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 350px));
+        grid-template-rows: repeat(3, minmax(75px, auto));
+        gap: 30px 45px;
+    }
+    &__item {
+        &-create {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-text {
+            position: relative;
+            line-height: 21px;
+            font-weight: 700;
+            @include before_circle;
+            &:before {
+                top: -36%;
+            }
+        }
+        &-digit {
+            font-weight: 500;
+            line-height: 21px;
+        }
+        &-line {
+            margin-top: 27px;
+            width: 350px;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+        }
+        &-orangeline {
+            background-color: $main-color;
+            height: 14px;
+            border-radius: 4px;
+            z-index: 5;
+        }
+    }
+}
