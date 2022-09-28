@@ -10,7 +10,7 @@
         &-create {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-content: space-between;
         }
         &-text {
             position: relative;
@@ -31,12 +31,12 @@
             height: 14px;
             background: #E8E4DE;
             border-radius: 4px;
-        }
-        &-orangeline {
-            background-color: $main-color;
-            height: 14px;
-            border-radius: 4px;
-            z-index: 5;
+            span {
+                display: block;
+                background-color: $main-color;
+                height: 14px;
+                border-radius: 4px;
+            }
         }
     }
 }
