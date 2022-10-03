@@ -3,8 +3,9 @@
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, minmax(100px, 350px));
-        grid-template-rows: repeat(3, minmax(75px, auto));
+        grid-template-rows: repeat(2, minmax(75px, auto));
         gap: 30px 45px;
+
     }
     &__item {
         &-create {
@@ -16,6 +17,7 @@
             position: relative;
             line-height: 21px;
             font-weight: 700;
+            left: 9px;
             @include before_circle;
             &:before {
                 top: -36%;
