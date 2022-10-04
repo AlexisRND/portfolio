@@ -2,9 +2,11 @@
     padding-top: 66px;
     &__wrapper {
         margin-top: 60px;
+        padding: 0 50px;
         display: grid;
         grid-template-columns: repeat(2, 366px);
         grid-template-rows: repeat(1, 162px);
+        grid-auto-rows: minmax(45px, auto);
         justify-content: space-between;
         ul {
             list-style-type: none;
