@@ -3,16 +3,13 @@
     position: relative;
     background: url('../img/Background_1.jpg') no-repeat 50%/cover;
     padding-top: 205px;
-    &__ml180 {
-        margin-left: 50px;
-    }
     &__title {
         width: 535px;
         margin-top: 10px;
     }
     &__subtitle {
         position: relative;
-        z-index: 2;
+        z-index: 0;
         @include before_circle;
     }
     &__btns {

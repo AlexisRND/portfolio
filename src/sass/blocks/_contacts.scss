@@ -9,6 +9,7 @@
     &__photo {
         img {
             width: 100%;
+            min-height: 100%;
         }
     }
     &__descr {
@@ -48,6 +49,16 @@
             background-color: #fff;
             font-size: 12px;
             margin-bottom: 0;
+        }
+        .error {
+            border: 1px solid red;
+        }
+
+        label.error {
+            border: none;
+            text-align: center;
+            top: 46px;
+            right: 20px;
         }
     }
     &__triggers {
@@ -90,5 +101,8 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
+    }
+    &__policy {
+        position: relative;
     }
 }
