@@ -316,7 +316,7 @@
             grid-column: unset;
             grid-template-columns: 1fr;
             column-gap: unset;
-            row-gap: 20px;
+            row-gap: 47px;
         }
         &__btn {
             order: 2;
@@ -324,9 +324,24 @@
             margin: 0 auto;
         }
         &__policy {
-            width: 180px;
+            width: 196px;
             margin: 0 auto;
             line-height: 18px;
+        }
+    }
+    .overlay {
+        .modal {
+            padding: 20px;
+            width: 225px;
+            &__title {
+                font-size: 17px;
+            }
+            &__descr {
+                margin-top: 9px;
+            }
+            &__close {
+                right: -32px;
+            }
         }
     }
 }
